@@ -16,6 +16,9 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -42,4 +45,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Rest API calls
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 }

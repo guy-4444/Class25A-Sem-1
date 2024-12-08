@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-
         final SnakeView snakeView = (SnakeView)findViewById(R.id.snake);
         snakeView.setMinValue(0);
         snakeView.setMaxValue(100);
